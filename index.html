@@ -35,7 +35,7 @@
 
 <h1>Privacy Policy — Be a Goalkeeper</h1>
 <p class="meta">
-  Effective date: 4 September 2026<br>
+  Effective date: 5 September 2026<br>
   Applies to: Be a Goalkeeper for Android (<code>com.porogapit.beagoalkeeper</code>)<br>
   Published by: Porogapit Studio
 </p>
@@ -44,9 +44,15 @@
 
 <h2>The short version</h2>
 <p>
-  Be a Goalkeeper keeps everything on your phone. It has no servers, sends no
-  network requests, shows no ads, contains no analytics, and asks for no
-  account. Nothing you do in the game reaches us or anyone else.
+  Your save file stays on your phone. We run no servers, and nothing you do in
+  the game — your keeper’s name, your progress, your results — is ever sent to
+  us. We could not read it if we wanted to.
+</p>
+<p>
+  The one exception is advertising. The game shows ads from Google AdMob, and
+  fetching an ad means Google’s servers see your device: its advertising ID, its
+  IP address, and basic model information. That happens between your phone and
+  Google. It does not pass through us, and it carries nothing from your save.
 </p>
 <p>
   We wrote the long version anyway, because Google Play requires one and because
@@ -71,23 +77,67 @@
   about intent:
 </p>
 <ul>
-  <li><strong>No network access — enforced by Android, not by our good
-    intentions.</strong> The app does not request the <code>INTERNET</code>
-    permission. Android therefore refuses it any network connection at the
-    operating-system level: even if a future bug tried to send something, the
-    phone would block it. On top of that, the app contains no HTTP client, no
-    socket, and no websocket code.</li>
-  <li><strong>No advertising.</strong> No ad SDK is present and no advertising
-    identifier (AAID) is read, stored, or sent.</li>
+  <li><strong>We have no servers, and the app never contacts us.</strong> The
+    <code>INTERNET</code> permission exists for one reason — the ad SDK
+    described below — and the app itself contains no HTTP client, no socket,
+    and no websocket code of its own. There is no address belonging to us for
+    anything to be sent to.</li>
+  <li><strong>Your save is never uploaded.</strong> Not to us, not to Google,
+    not to the ad network. Your keeper’s name, your career, your statistics,
+    and your inventory stay in the app’s private storage on the phone, and no
+    part of them is attached to an ad request.</li>
   <li><strong>No analytics or telemetry.</strong> No usage statistics, crash
-    reports, or event logs are collected.</li>
+    reports, or event logs are collected — by us or by anyone through this
+    app.</li>
   <li><strong>No account, no sign-in.</strong> The app does not ask who you are.</li>
   <li><strong>No purchases.</strong> There is no real-money billing. Coins and
     gems are earned in the game and have no monetary value.</li>
   <li><strong>No location, contacts, camera, microphone, photos, or files.</strong>
     The app requests none of these permissions.</li>
-  <li><strong>No third-party SDKs that process personal data.</strong></li>
+  <li><strong>No ad that starts on its own inside a match.</strong> Every ad
+    that grants you something is one you chose by pressing a button that said
+    so first.</li>
 </ul>
+
+<h2>Advertising</h2>
+<p>
+  The game is free, and ads are how it pays for itself. They come from
+  <strong>Google AdMob</strong>. Google is an independent controller of the data
+  it collects this way, not a processor acting for us — which means Google’s own
+  privacy policy governs it, and we have no access to it.
+</p>
+<p>
+  <strong>What an ad request involves.</strong> To choose and deliver an ad, the
+  SDK sends Google your device’s advertising ID (AAID), IP address, device
+  model, operating system version, screen size, coarse region derived from the
+  IP address, and which ad slot in the game was shown. It does not send your
+  keeper’s name, your save file, or anything you typed.
+</p>
+<p>
+  <strong>Where ads appear.</strong> In five places you choose to enter — extra
+  gems, a heart refill, a second chance at a saved shot, the keeper’s instinct,
+  and changing your keeper’s name — plus one that appears on its own: after the
+  results screen of every third match, and never after a defeat. That is the
+  complete list.
+</p>
+<p>
+  <strong>Your consent, and how to change your mind.</strong> In the European
+  Economic Area, the United Kingdom, and Switzerland the app asks before any
+  personalised ad is requested, using Google’s certified consent platform (UMP).
+  Your answer is remembered. To change it later, open
+  <strong>Settings → Ad privacy options</strong> inside the game. Where the law
+  does not require the question, the form is not shown.
+</p>
+<p>
+  <strong>Opting out on the device itself.</strong> Android lets you delete your
+  advertising ID entirely: <strong>Settings → Privacy → Ads</strong>. Ads still
+  appear, but they stop being personalised, and the ID is no longer available to
+  any app on the phone.
+</p>
+<p>
+  Google’s policy for this data:
+  <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>
+</p>
 
 <h2>Device information</h2>
 <p>
@@ -100,12 +150,26 @@
 
 <h2>Children</h2>
 <p>
-  Be a Goalkeeper is not directed at children. The only thing that could
-  identify anyone is the goalkeeper name a player types, and that name stays in
+  Be a Goalkeeper is not directed at children, and it is not listed in Google
+  Play’s Families programme. Its store listing declares a general audience.
+</p>
+<p>
+  The only thing a player types is a goalkeeper’s name, and that name stays in
   the app’s private storage on the phone — we never receive it and cannot read
-  it. Because nothing is transmitted to us or to any third party, and no
-  advertising is shown, we do not process children’s data under GDPR Article 8,
-  COPPA, or Indonesia’s Personal Data Protection Law (UU 27/2022).
+  it.
+</p>
+<p>
+  Because the game does show ads, we say plainly what that means rather than
+  claiming an exemption we no longer have: an ad request reaches Google whoever
+  is holding the phone. If you are a parent and would rather your child’s device
+  did not carry an advertising ID at all, Android can delete it —
+  <strong>Settings → Privacy → Ads</strong> — and it applies to every app, not
+  only this one.
+</p>
+<p>
+  We do not knowingly collect anything from a child, under GDPR Article 8,
+  COPPA, or Indonesia’s Personal Data Protection Law (UU 27/2022); we hold no
+  data about any player at all.
 </p>
 
 <h2>Your rights, and how to exercise them</h2>
@@ -125,23 +189,31 @@
 
 <h2>Data sharing</h2>
 <p>
-  We share nothing, because we hold nothing. We do not sell, rent, or disclose
-  personal data. There is no category of recipient to list.
+  We hold nothing, so we have nothing to sell, rent, or disclose, and we do none
+  of those things.
+</p>
+<p>
+  There is exactly one recipient to list, and it never receives anything from
+  us: <strong>Google</strong>, which receives an ad request directly from your
+  phone when an ad is shown, as described under <em>Advertising</em>.
 </p>
 
 <h2>Changes to this policy</h2>
 <p>
   This policy describes the app as it is built today. If a future version adds
-  advertising, analytics, accounts, cloud saves, or in-app purchases, this
-  policy will be updated <strong>in the same release</strong> that adds them,
-  the effective date will change, and the app will tell you inside Settings
-  before the new behaviour begins. We will not quietly widen what we collect.
+  analytics, accounts, cloud saves, or in-app purchases, this policy will be
+  updated <strong>in the same release</strong> that adds them, the effective
+  date will change, and the app will tell you inside Settings before the new
+  behaviour begins. We will not quietly widen what we collect.
 </p>
 <p>
-  The features currently planned but <strong>not present</strong> are listed
-  here so the comparison is honest: advertising (Google AdMob), Google sign-in
-  with cloud saved games, and in-app purchases. None of them is in the app
-  today. Each of them, when it arrives, changes what this document says.
+  The 5 September 2026 revision is that promise being kept: advertising was
+  listed in the previous version as planned and absent, and this version was
+  published in the same release that added it.
+</p>
+<p>
+  Still planned and still <strong>not present</strong>: Google sign-in with
+  cloud saved games, and in-app purchases. Neither is in the app today.
 </p>
 
 <h2>Contact</h2>
